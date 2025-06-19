@@ -8,7 +8,7 @@ const PORT = 5000;
 // //  CORS setup for Vite dev server at :5173
 app.use(cors(
   {
-    origin: 'https://node-middelware-frontend.vercel.app', // Adjust this to your Vite dev server URL
+    origin: 'https://node-middelware-frontend-byz2.vercel.app', // Adjust this to your Vite dev server URL
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true // Allow credentials if needed
   }
@@ -33,4 +33,5 @@ app.post('/api/submit', (req, res) => {
 
 app.listen(PORT, () => {
   console.log(`Server running at http://localhost:${PORT}`);
+
 });
